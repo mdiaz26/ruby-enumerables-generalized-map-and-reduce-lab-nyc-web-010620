@@ -13,6 +13,7 @@ count = 0
   while count < array.length do |array, starting_point|
     yield(array, starting_point)
     end
-  end
   count += 1 
+  end
+  starting_point
 end
