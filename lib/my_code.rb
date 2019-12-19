@@ -9,8 +9,8 @@ def map(array)
 end
 
 def reduce(array, count = 0)
-  array.reduce do |element|
-    n += yield(element)
+  array.reduce do |element, n|
+    n += yield(element, n)
     binding.pry
   end
 end
