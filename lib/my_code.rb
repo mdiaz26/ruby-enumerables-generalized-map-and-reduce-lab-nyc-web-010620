@@ -8,9 +8,10 @@ def map(array)
   new_array
 end
 
-def reduce(array, starting_point = 0)
-pp array
-pp starting_point
+def reduce(array, starting_point = nil)
+  if starting_point
+    
+  end
 count = 0
   while count < array.length 
     starting_point = yield(starting_point, array[count])
