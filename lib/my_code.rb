@@ -14,4 +14,5 @@ count = 0
   count += yield(element)
     end
   end
+  count += 1 
 end
