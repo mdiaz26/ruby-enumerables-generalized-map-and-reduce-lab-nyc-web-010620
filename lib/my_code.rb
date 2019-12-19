@@ -10,9 +10,8 @@ end
 
 def reduce(array, starting_point = 0)
 count = 0
-  while count < array.length do |array, starting_point|
+  while count < array.length 
     yield(array, starting_point)
-    end
   count += 1 
   end
   starting_point
