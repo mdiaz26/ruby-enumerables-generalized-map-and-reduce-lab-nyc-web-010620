@@ -8,9 +8,9 @@ def map(array)
   new_array
 end
 
-def reduce(array)
+def reduce(array, count = 0)
   array.reduce do |element|
-    n += yield(element, n = 0)
+    n += yield(element)
     binding.pry
   end
 end
