@@ -8,7 +8,7 @@ def map(array)
   new_array
 end
 
-def reduce(array, count = 0)
+def reduce(array, starting_point = nil)
   array.reduce do |element, n|
     n += yield(element, n)
     # binding.pry
