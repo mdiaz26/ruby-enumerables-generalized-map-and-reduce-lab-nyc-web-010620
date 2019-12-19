@@ -11,6 +11,6 @@ end
 def reduce(array, count = 0)
   array.reduce do |element, n|
     n += yield(element, n)
-    binding.pry
+    # binding.pry
   end
 end
